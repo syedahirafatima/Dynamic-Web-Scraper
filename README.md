@@ -1,4 +1,4 @@
-# Hacker News Scraper
+## Web Scraper
 
 This is a simple Python script that scrapes the top articles from [Hacker News](https://news.ycombinator.com/) and displays their titles along with links. It uses the `requests` library to fetch the page and `BeautifulSoup` from `bs4` to parse the HTML.
 
@@ -72,4 +72,3 @@ If the request fails (e.g., due to no internet connection), the script will noti
 
 ## License
 This project is for educational purposes and is not affiliated with Hacker News or Y Combinator.
-
