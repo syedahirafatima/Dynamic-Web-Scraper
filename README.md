@@ -11,4 +11,29 @@ This is a simple Python script that scrapes the top articles from [Hacker News](
 Make sure you have Python 3 installed along with the following libraries:
 - `requests`
 - `beautifulsoup4`
+- You can install them using:
+```bash
+pip install requests beautifulsoup4
+```
+## Usage
+1. Clone or download this script.
+2. Run the Python file:
+
+```
+python hackernews_scraper.py
+```
+You will see the top 10 articles printed with their titles and links.
+
+## Example Output
+```
+Top Articles from Hacker News:
+1. Example Article Title (https://example.com)
+2. Another News Item (https://another.com)
+```
+## Notes
+If the request fails (e.g., due to no internet connection), the script will notify you.
+
+## License
+This project is for educational purposes and is not affiliated with Hacker News or Y Combinator.
+
 
