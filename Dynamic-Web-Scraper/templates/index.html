@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="light-mode">
+    <div class="container">
+        <h1>🌐 Dynamic Website Scraper</h1>
+
+        <div class="toggle-container">
+            <button id="modeToggle">Dark Mode</button>
+        </div>
+
+        <form id="scrapeForm">
+            <input type="text" name="url" placeholder="Enter website URL..." required>
+            <input type="text" name="query" placeholder="Enter text or keyword..." required>
+            <button type="submit">Scrape</button>
+        </form>
+
+        <div id="loading" class="hidden">Scraping... Please wait ⏳</div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
