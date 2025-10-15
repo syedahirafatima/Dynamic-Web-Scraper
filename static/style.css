@@ -1,0 +1,98 @@
+:root {
+  --primary-blue: #007BFF;
+  --dark-bg: #0b1524;
+  --light-bg: #d3f8ff;
+  --dark-text: #e2e2e2;
+  --light-text: #1a1a1a;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 450px;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-blue);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b6b6b6;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--primary-blue);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#loading {
+  margin-top: 15px;
+  font-weight: bold;
+  color: var(--primary-blue);
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.toggle-container {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark-mode .container {
+  background-color: #132239;
+  color: var(--dark-text);
+}
+
+body.dark-mode input,
+body.dark-mode button {
+  background-color: #1c2e4a;
+  color: var(--dark-text);
+  border: 1px solid #2a4d7a;
+}
+
+body.dark-mode button:hover {
+  background-color: #0b5ed7;
+}
