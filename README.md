@@ -1,74 +1,73 @@
-## Web Scraper
+# Dynamic Website Scraper (Selenium)
 
-This is a simple Python script that scrapes the top articles from [Hacker News](https://news.ycombinator.com/) and displays their titles along with links. It uses the `requests` library to fetch the page and `BeautifulSoup` from `bs4` to parse the HTML.
+A minimal web app (Flask + Selenium) to scrape **dynamic** websites (pages that load content via JavaScript). 
 
-## Features
-- Fetches the latest top articles from Hacker News
-- Displays the first 10 articles
-- Shows both the article title and its URL
+# Preview of the Dynamic Website Scraper
 
-## Requirements
-Make sure you have Python 3 installed along with the following libraries:
-- `requests`
-- `beautifulsoup4`
-- You can install them using:
-```bash
-pip install requests beautifulsoup4
-```
-## Usage
-1. Clone or download this script.
-2. Run the Python file:
+<img width="865" height="710" alt="Screenshot 2025-10-16 044402" src="https://github.com/user-attachments/assets/7b6fa852-45c2-494e-b850-e7552ca4dc94" />
 
-```
-python hackernews_scraper.py
-```
-You will see the top 10 articles printed with their titles and links.
 
-## Example Output
-```
-Top Articles from Hacker News:
-1. Example Article Title (https://example.com)
-2. Another News Item (https://another.com)
-```
-## Notes
-If the request fails (e.g., due to no internet connection), the script will notify you.
+# Recordings
+- Dark/Light Mode Toggle:
 
-## License
-This project is for educational purposes and is not affiliated with Hacker News or Y Combinator.
- # Hacker News Scraper
+![1013 (1)](https://github.com/user-attachments/assets/b2d00911-9420-4c62-8c08-9aabe136e711)
 
-This is a simple Python script that scrapes the top articles from [Hacker News](https://news.ycombinator.com/) and displays their titles along with links. It uses the `requests` library to fetch the page and `BeautifulSoup` from `bs4` to parse the HTML.
 
-## Features
-- Fetches the latest top articles from Hacker News
-- Displays the first 10 articles
-- Shows both the article title and its URL
+- Demo:
 
-## Requirements
-Make sure you have Python 3 installed along with the following libraries:
-- `requests`
-- `beautifulsoup4`
-- You can install them using:
-```bash
-pip install requests beautifulsoup4
-```
-## Usage
-1. Clone or download this script.
-2. Run the Python file:
 
-```
-python hackernews_scraper.py
-```
-You will see the top 10 articles printed with their titles and links.
+![1013 (1)(1)](https://github.com/user-attachments/assets/c4dd0824-bbde-4809-a393-69f9b13e66dc)
 
-## Example Output
-```
-Top Articles from Hacker News:
-1. Example Article Title (https://example.com)
-2. Another News Item (https://another.com)
-```
-## Notes
-If the request fails (e.g., due to no internet connection), the script will notify you.
 
-## License
-This project is for educational purposes and is not affiliated with Hacker News or Y Combinator.
+# 💡 Why I Built This Project
+
+- To explore how **Selenium** scrapes JavaScript-based websites.  
+- To build a **simple, user-friendly web scraper** for everyone.  
+- To practice **full-stack development** with Flask and modern UI design.  
+- To lay the groundwork for **future advanced scrapers**.
+
+  
+# 📌 Features
+
+✔️  Scrapes JavaScript-rendered pages using Selenium<br>
+✔️  Simple keyword-based search (returns visible text matches)<br>
+✔️  Blue-themed responsive UI with Dark/Light toggle<br>
+✔️  Lightweight: Flask backend + static frontend<br>
+
+# 📌 How To Run
+
+1️⃣ Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2️⃣ Run the app:
+   ```bash
+   python app.py
+   ```
+3️⃣ Open your browser<br>
+4️⃣ Enter the URL of a public page<br>
+5️⃣ Enter a keyword or phrase.<br>
+6️⃣ Click Scrape and view results.<br>
+
+# 📌 File Structure
+Dynamic-Web-Scraper/<br>
+├── app.py<br>
+├── scraper.py<br>
+├── requirements.txt<br>
+├── templates/<br>
+│   └── index.html<br>
+└── static/<br>
+    ├── style.css<br>
+    └── script.js<br>
+
+# 📌 Requirements
+Flask<br>
+selenium<br>
+webdriver-manager<br>
+
+
+## 📌 License
+Under MIT license
+
+
+   
